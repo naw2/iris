@@ -19,6 +19,8 @@ if st.button("Classify flower"):
     model = get_model()
     pred = model.predict(num_values)
     pred= int(pred)
+    img = 'iris_flowers.jpg'
+    st.image(img,caption="Iris Flowers"
     if pred == 0:
         st.write("Flower is Iris_Sentosa")
     elif pred == 1:
